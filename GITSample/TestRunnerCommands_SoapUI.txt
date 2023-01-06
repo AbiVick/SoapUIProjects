@@ -1,0 +1,6 @@
+
+cd C:\Program Files\SmartBear\SoapUI-5.7.0\bin\.
+testrunner.bat -s"TestSuite 1" C:\Users\Student\Documents\REST-Project-4-soapui-project.xml
+
+cd C:\Program Files\SmartBear\SoapUI-5.7.0\bin\.
+testrunner.bat -s"TestSuite 1" -c"Copy of TestCase 1" C:\Users\Student\Documents\REST-Project-4-soapui-project.xml

@@ -1,0 +1,79 @@
+{
+  "id": "2327f5ba-a28b-43fd-99d0-4084db74bf80",
+  "version": "2.0",
+  "name": "testngfile",
+  "url": "https://admin-demo.nopcommerce.com",
+  "tests": [{
+    "id": "312c0c06-3e65-40a4-b8d8-042007123e76",
+    "name": "testngValidation",
+    "commands": [{
+      "id": "f354a6bf-0441-4d4d-a0ac-8a4e17945c09",
+      "comment": "",
+      "command": "open",
+      "target": "/login?ReturnUrl=%2Fadmin%2F",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "601397de-348f-4dea-b907-6cad8a1c8e58",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1bd0f1c-67bf-4601-9517-3502b918a9c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-1",
+      "targets": [
+        ["css=.button-1", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "349749d8-7ec7-4ecc-81b5-19f07d425942",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=.navbar-nav > .nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='navbarText']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f052fdd-dc62-478a-8e29-727fd1679469",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=label:nth-child(2)",
+      "targets": [
+        ["css=label:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Remember me?')]", "xpath:innerText"]
+      ],
+      "value": "Remember me"
+    }, {
+      "id": "c47a5ea3-375e-4756-a2d3-fe41e9200677",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d55de0a6-c826-446c-87eb-407fe0f1ad0f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["312c0c06-3e65-40a4-b8d8-042007123e76"]
+  }],
+  "urls": ["https://admin-demo.nopcommerce.com/"],
+  "plugins": []
+}
